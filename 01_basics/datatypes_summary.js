@@ -36,3 +36,26 @@ Typeof:
     6. object = "object"
     7. function = "function"
 */
+
+// there are two types of memory
+// 1. Stack Memory (Primitive) -> It gives to copy
+// 2. Heap Memory (Non - Primitive) -> It gives to reference
+
+let myYoutubeName = "xyzyoutube.com"
+let anothername = myYoutubeName
+anothername = "abc.com"
+
+console.log(myYoutubeName)
+console.log(anothername)
+
+let userOne ={
+    email: "aqw@google.com",
+    upi: "userone@qui"
+}
+
+let userTwo = userOne
+
+userTwo.email = "adf@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
