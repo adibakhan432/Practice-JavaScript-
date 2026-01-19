@@ -26,3 +26,16 @@ const obj3 = {5: 'a', 6: 'b'}
 // const obj4 = Object.assign({}, obj1, obj2, obj3)
 const obj4 = {...obj1, ...obj2}
 console.log(obj4)
+
+//Object Destructuring
+
+const course = {
+    courseName : "JavaScript",
+    price : 999,
+    courseInstructor : "xyz"
+};
+
+//course.courseInstructor;
+
+const {courseInstructor: instructor} = course
+console.log(instructor)
